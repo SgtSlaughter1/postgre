@@ -14,6 +14,8 @@ const pool = new Pool({
   port: process.env.PGPORT ? parseInt(process.env.PGPORT) : 5432,
 });
 
+
+
 // GET /users - Get all users
 app.get('/users', async (req, res) => {
   try {
